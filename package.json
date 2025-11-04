@@ -1,20 +1,21 @@
 {
-  "name": "kisaanconnect-frontend",
+  "name": "kisaanconnect-backend",
   "version": "1.0.0",
-  "private": true,
+  "description": "Express backend for KisaanConnect enhanced",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "axios": "^1.4.0",
-    "react-router-dom": "^6.14.1"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "body-parser": "^1.20.2",
+    "bcryptjs": "^2.4.3",
+    "lowdb": "^6.0.1"
   },
   "devDependencies": {
-    "vite": "^5.0.0",
-    "@vitejs/plugin-react": "^4.0.0"
+    "nodemon": "^2.0.22"
   }
 }
