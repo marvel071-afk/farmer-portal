@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KisaanConnect — Modern Farmer Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="KisaanConnect — modern tools and marketplace for farmers." />
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+  <header class="bg-gradient-to-r from-green-600 to-emerald-500 text-white">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo.svg" alt="KisaanConnect" class="h-10 w-10"/>
+        <div>
+          <h1 class="font-bold text-lg">KisaanConnect</h1>
+          <p class="text-xs -mt-1">Bridging farmers & buyers</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex gap-6 items-center text-sm">
+        <a href="#features" class="hover:underline">Features</a>
+        <a href="#marketplace" class="hover:underline">Marketplace</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <a href="#" class="bg-white/20 px-3 py-1 rounded">Get Started</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <!-- Hero -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-4xl font-extrabold mb-4">Modern tools for today's farmers</h2>
+        <p class="text-gray-700 mb-6">KisaanConnect helps farmers list produce, find buyers, and access weather & advisory content — all from a simple, mobile-friendly interface.</p>
+        <div class="flex gap-3">
+          <a href="#marketplace" class="bg-emerald-600 text-white px-4 py-2 rounded shadow">Explore Marketplace</a>
+          <a href="#contact" class="border border-emerald-600 text-emerald-600 px-4 py-2 rounded">Contact Us</a>
+        </div>
+        <div class="mt-8 grid grid-cols-3 gap-3">
+          <div class="p-3 bg-white rounded shadow">
+            <h4 class="text-sm font-semibold">Trusted Buyers</h4>
+            <p class="text-xs text-gray-500">Connect easily</p>
+          </div>
+          <div class="p-3 bg-white rounded shadow">
+            <h4 class="text-sm font-semibold">Fair Prices</h4>
+            <p class="text-xs text-gray-500">Transparent listings</p>
+          </div>
+          <div class="p-3 bg-white rounded shadow">
+            <h4 class="text-sm font-semibold">Local Weather</h4>
+            <p class="text-xs text-gray-500">Plan better</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <img src="assets/hero.svg" alt="Farm illustration" class="max-h-72"/>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="mt-16">
+      <h3 class="text-2xl font-bold mb-6">Features</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="font-semibold mb-2">Marketplace</h4>
+          <p class="text-sm text-gray-600">List crops with photos, prices and quantities to reach buyers in your region.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="font-semibold mb-2">Weather & Advisory</h4>
+          <p class="text-sm text-gray-600">Localized weather forecasts and crop advisories to plan your season.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="font-semibold mb-2">Simple Dashboard</h4>
+          <p class="text-sm text-gray-600">Track listings, messages, and update your profile from one place.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marketplace preview -->
+    <section id="marketplace" class="mt-16">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-2xl font-bold">Marketplace Preview</h3>
+        <a href="#" class="text-sm text-emerald-600">View all listings →</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article class="bg-white p-4 rounded shadow">
+          <img src="assets/crops/turmeric.svg" alt="Turmeric" class="h-36 w-full object-cover rounded mb-3"/>
+          <h4 class="font-semibold">Organic Turmeric</h4>
+          <p class="text-sm text-gray-600">Maharashtra • 100 kg</p>
+          <p class="mt-2"><strong>Price:</strong> ₹15,000</p>
+        </article>
+        <article class="bg-white p-4 rounded shadow">
+          <img src="assets/crops/wheat.svg" alt="Wheat" class="h-36 w-full object-cover rounded mb-3"/>
+          <h4 class="font-semibold">Whole Wheat</h4>
+          <p class="text-sm text-gray-600">Punjab • 500 kg</p>
+          <p class="mt-2"><strong>Price:</strong> ₹22,000</p>
+        </article>
+        <article class="bg-white p-4 rounded shadow">
+          <img src="assets/crops/rice.svg" alt="Rice" class="h-36 w-full object-cover rounded mb-3"/>
+          <h4 class="font-semibold">Basmati Rice</h4>
+          <p class="text-sm text-gray-600">Uttar Pradesh • 200 kg</p>
+          <p class="mt-2"><strong>Price:</strong> ₹40,000</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Static weather/news demo -->
+    <section class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded shadow">
+        <h4 class="font-semibold mb-3">Local Weather (Demo)</h4>
+        <p class="text-sm text-gray-600">City: <strong>Mumbai</strong></p>
+        <div class="mt-3 flex items-center gap-4">
+          <div class="text-4xl">🌤️</div>
+          <div>
+            <div class="text-xl font-bold">29°C</div>
+            <div class="text-sm text-gray-500">Partly cloudy · Humidity 68% · Wind 10 km/h</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow">
+        <h4 class="font-semibold mb-3">Latest News (Demo)</h4>
+        <ul class="list-disc pl-5 text-sm text-gray-600 space-y-2">
+          <li>New crop insurance scheme launched for smallholders.</li>
+          <li>Local marketplace rates show steady growth this season.</li>
+          <li>Advisory: Apply fertilizer after light rains in tropics.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-16 bg-white p-6 rounded shadow">
+      <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+      <p class="text-sm text-gray-600 mb-4">Have questions or want to list your produce? Drop a message.</p>
+      <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <input type="text" placeholder="Full name" class="p-3 border rounded" required />
+        <input type="email" placeholder="Email" class="p-3 border rounded" required />
+        <input type="text" placeholder="Subject" class="p-3 border rounded md:col-span-2" required />
+        <textarea placeholder="Message" class="p-3 border rounded md:col-span-2" rows="4"></textarea>
+        <button class="bg-emerald-600 text-white px-4 py-2 rounded md:col-span-2">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="mt-12 text-center text-sm text-gray-500">
+      © 2025 KisaanConnect · Built with care for farmers.
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
