@@ -1,0 +1,14 @@
+{
+  "users": [],
+  "crops": [
+    {
+      "id": "1",
+      "ownerId": "seed",
+      "title": "Organic Turmeric",
+      "price": "15000",
+      "quantity": "100 kg",
+      "location": "Maharashtra",
+      "description": "High quality organic turmeric."
+    }
+  ]
+}
